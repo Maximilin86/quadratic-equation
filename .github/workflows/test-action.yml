@@ -14,7 +14,7 @@ jobs:
       - run: ./tests/tests
 
       - name: Coveralls
-        run: coveralls -t ${{ secrets.coveralls_token }} --root . -E ".*external.*" -E ".*tests.*"
+        run: coveralls -t ${{ Maximilin86/quadratic-equation }} --root . -E ".*external.*" -E ".*tests.*"
 
 
   sonarcloud-check:
